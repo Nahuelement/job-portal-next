@@ -10,7 +10,7 @@ const Index: NextPage = () => {
 
     return (
 
-      <Layout title={'NahuelJob - Login'}  >
+      <Layout title={'Registrarse'}  >
             <Register />
       </Layout>
     )

@@ -24,7 +24,7 @@ export const Register = () => {
 
         const submitHabdler = (e:React.FormEvent<HTMLFormElement>)=> {
             e.preventDefault()
-           
+
             register(fistName,lastName,email,password)
 
         }
@@ -65,7 +65,7 @@ export const Register = () => {
             <div className="right">
               <div className="rightContentWrapper">
                 <div className="headerWrapper">
-                  <h2> SIGN UP</h2>
+                  <h2> Registrarse </h2>
                 </div>
                 <form className="form" onSubmit={submitHabdler}>
                   <div className="inputWrapper">
@@ -120,7 +120,7 @@ export const Register = () => {
                   </div>
                   <div className="registerButtonWrapper">
                     <button type="submit" className="registerButton">
-                      {loading ? "Loading...":"Register"}
+                      {loading ? "Cargando...":"Registrarse "}
                     </button>
                   </div>
                 </form>

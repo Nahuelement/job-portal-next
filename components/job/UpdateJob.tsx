@@ -166,7 +166,7 @@ export const UpdateJob = ({access_token, job}:{access_token:string, job:any}) =>
                 </div>
                 <div className="col-12 col-md-6 ml-4 mt-4 mt-md-0 ml-md-0">
                   <div className="boxWrapper">
-                    <h4>Job Types:</h4>
+                    <h4>Trabajo:</h4>
                     <div className="selectWrapper">
                       <select
                       className="classic"
@@ -183,7 +183,7 @@ export const UpdateJob = ({access_token, job}:{access_token:string, job:any}) =>
                   </div>
 
                   <div className="boxWrapper">
-                    <h4>Education:</h4>
+                    <h4>Educacion:</h4>
                     <div className="selectWrapper">
                       <select className="classic"
                       value={education}
@@ -199,7 +199,7 @@ export const UpdateJob = ({access_token, job}:{access_token:string, job:any}) =>
                   </div>
 
                   <div className="boxWrapper">
-                    <h4>Industry:</h4>
+                    <h4>Industria:</h4>
                     <div className="selectWrapper">
                       <select className="classic"
                         value={industry}
@@ -215,7 +215,7 @@ export const UpdateJob = ({access_token, job}:{access_token:string, job:any}) =>
                   </div>
 
                   <div className="boxWrapper">
-                    <h4>Experience:</h4>
+                    <h4>Experiencia:</h4>
                     <div className="selectWrapper">
                       <select
                       value={experience}

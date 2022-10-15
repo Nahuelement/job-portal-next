@@ -12,7 +12,7 @@ const Index: NextPage = () => {
 
     return (
 
-      <Layout title={'Topic Stats'}  >
+      <Layout title={'Estadistica de trabajo'}  >
         <TopicStats />
       </Layout>
     )

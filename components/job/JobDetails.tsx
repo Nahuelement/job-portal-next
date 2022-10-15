@@ -143,55 +143,55 @@ console.log(lastDatePassed)
                         }
 
                         <span className="ml-4 text-success">
-                          <b>{candidate}</b> candidates has applied to this job.
+                          <b>{candidate}</b> candidatos que han aplicado a este trabajo.
                         </span>
                       </span>
                     </div>
                   </div>
 
                   <div className="job-description mt-5">
-                    <h4>Description</h4>
+                    <h4>Descripcion</h4>
                     <p>
                     {job.description}
                     </p>
                   </div>
 
                   <div className="job-summary">
-                    <h4 className="mt-5 mb-4">Job Summary</h4>
+                    <h4 className="mt-5 mb-4">Resumen del trabajo</h4>
                     <table className="table table-striped">
                       <tbody>
                         <tr>
-                          <td>Job Type</td>
+                          <td>Trabajo</td>
                           <td>:</td>
                           <td>{job.jobType}</td>
                         </tr>
 
                         <tr>
-                          <td>{job.industry}</td>
+                          <td>Industria</td>
                           <td>:</td>
-                          <td>IT</td>
+                          <td>{job.industry}</td>
                         </tr>
 
                         <tr>
-                          <td>Expected Salary</td>
+                          <td>Salario</td>
                           <td>:</td>
                           <td>{job.salary}</td>
                         </tr>
 
                         <tr>
-                          <td>Education</td>
+                          <td>Educación</td>
                           <td>:</td>
                           <td>{job.education}</td>
                         </tr>
 
                         <tr>
-                          <td>Experience</td>
+                          <td>Experiencia </td>
                           <td>:</td>
                           <td>{job.experience}</td>
                         </tr>
 
                         <tr>
-                          <td>Company</td>
+                          <td>Compañia</td>
                           <td>:</td>
                           <td>{job.company}</td>
                         </tr>
@@ -200,7 +200,7 @@ console.log(lastDatePassed)
                   </div>
 
                   <div className="job-location">
-                    <h4 className="mt-5 mb-4">Job Location</h4>
+                    <h4 className="mt-5 mb-4">Localización</h4>
                     <div id='job-map' style={{height:520, width:'80vw'}} />
                   </div>
                 </div>
@@ -208,15 +208,15 @@ console.log(lastDatePassed)
 
               <div className="col-xl-3 col-lg-4">
                 <div className="job-contact-details p-3">
-                  <h4 className="my-4">More Details</h4>
+                  <h4 className="my-4">Mas detalles</h4>
                   <hr />
-                  <h5>Email Address:</h5>
+                  <h5>Email:</h5>
                   <p>{job.email}</p>
 
-                  <h5>Job Posted:</h5>
+                  <h5>Subido:</h5>
                   <p>{moment.utc(job.createdAt).local().startOf('seconds').fromNow()}</p>
 
-                  <h5>Last Date:</h5>
+                  <h5>Ultima actualización:</h5>
                   <p>{job.lastDate.substring(0,10)}</p>
                 </div>
 
@@ -227,9 +227,8 @@ console.log(lastDatePassed)
                     (
                     <div className="alert alert-danger">
                     <h5>Note:</h5>
-                    You can no longer apply to this job. This job is expired. Last
-                    date to apply for this job was: <b>{job.lastDate.substring(0,10)}</b>
-                    <br /> Checkout others job on Jobbee.
+                    no puedes postular a este trabajo porque expiro: <b>{job.lastDate.substring(0,10)}</b>
+                    <br /> Busca otros trabajos en el portal.
                     </div>
                     ): null
                    }

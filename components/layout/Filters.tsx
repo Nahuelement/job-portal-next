@@ -93,7 +93,7 @@ export const Filters:FC = () => {
                 onClick={({target})=>handlerClick(target)}
               />
               <label className="form-check-label" htmlFor="check2">
-                Temporary
+                Temporada
               </label>
             </div>
 
@@ -126,7 +126,7 @@ export const Filters:FC = () => {
                 onClick={({target})=>handlerClick(target)}
               />
               <label className="form-check-label" htmlFor="check4">
-                Bachelors
+                Grado
               </label>
             </div>
 
@@ -175,7 +175,7 @@ export const Filters:FC = () => {
                 onClick={({target})=>handlerClick(target)}
               />
               <label className="form-check-label" htmlFor="check7">
-                No Experience
+                Sin experiencia
               </label>
             </div>
 
@@ -190,7 +190,7 @@ export const Filters:FC = () => {
                 onClick={({target})=>handlerClick(target)}
               />
               <label className="form-check-label" htmlFor="check8">
-                1 Years
+                 1 Año
               </label>
             </div>
 
@@ -205,7 +205,7 @@ export const Filters:FC = () => {
                 onClick={({target})=>handlerClick(target)}
               />
               <label className="form-check-label" htmlFor="check9">
-                2 Years
+                2 Años
               </label>
             </div>
 
@@ -220,7 +220,7 @@ export const Filters:FC = () => {
                 onClick={({target})=>handlerClick(target)}
               />
               <label className="form-check-label" htmlFor="check10">
-                3 Year+
+                3 Años+
               </label>
             </div>
 
@@ -238,7 +238,7 @@ export const Filters:FC = () => {
                 onClick={({target})=>handlerClick(target)}
               />
               <label className="form-check-label" htmlFor="check11">
-                $1 - $50000
+                $1 - $500.000
               </label>
             </div>
 
@@ -253,7 +253,7 @@ export const Filters:FC = () => {
                 onClick={({target})=>handlerClick(target)}
               />
               <label className="form-check-label" htmlFor="check12">
-                $50000 - $100,000
+                $500.000 - $1.000.000
               </label>
             </div>
 
@@ -268,7 +268,7 @@ export const Filters:FC = () => {
                 onClick={({target})=>handlerClick(target)}
               />
               <label className="form-check-label" htmlFor="check13">
-                $100,000 - $200,000
+                $1.000.000 - $2.000.000
               </label>
             </div>
 
@@ -283,7 +283,7 @@ export const Filters:FC = () => {
                 onClick={({target})=>handlerClick(target)}
               />
               <label className="form-check-label" htmlFor="defaultCheck2">
-                $300,000 - $500,000
+                $3.000.000 - $4.000.000
               </label>
             </div>
 
@@ -298,7 +298,7 @@ export const Filters:FC = () => {
                 onClick={({target})=>handlerClick(target)}
               />
               <label className="form-check-label" htmlFor="check14">
-                $500,000 - $1,000,000
+                $4.000.000 - $5.000.000
               </label>
             </div>
 

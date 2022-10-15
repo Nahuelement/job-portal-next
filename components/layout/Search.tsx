@@ -39,7 +39,7 @@ const Search = () => {
         <div className="right">
           <div className="rightContentWrapper">
             <div className="headerWrapper">
-              <h2> SEARCH</h2>
+              <h2> Buscar</h2>
             </div>
             <form className="form" onSubmit={submitHandler}>
               <div className="inputWrapper">
@@ -60,13 +60,13 @@ const Search = () => {
                     placeholder="Enter City, State ..."
                     value = {location}
                     onChange = {({target})=> setLocation(target.value)}
-                    
+
                   />
                 </div>
               </div>
               <div className="searchButtonWrapper">
                 <button type="submit" className="searchButton">
-                  Search
+                  Byscar
                 </button>
               </div>
             </form>

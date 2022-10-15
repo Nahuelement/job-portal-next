@@ -12,7 +12,7 @@ const Index: NextPage = () => {
 
     return (
 
-      <Layout title={'NahuelJob - Encuentra ahora tu nuevo trabajo'}  >
+      <Layout title={'Busca tu nuevo empleo'}  >
             <Search />
       </Layout>
     )

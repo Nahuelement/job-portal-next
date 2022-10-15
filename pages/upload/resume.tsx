@@ -17,7 +17,7 @@ interface Props {
 
       return (
 
-        <Layout title={'NahuelJob - sube tu curriculum'}  >
+        <Layout title={'Carga tu curriculum'}  >
               <UpLoadResume access_token={access_token} />
         </Layout>
       )

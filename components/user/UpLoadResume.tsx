@@ -65,7 +65,7 @@ export const UpLoadResume = ({access_token}:{access_token:string}) => {
         <div className="right">
           <div className="rightContentWrapper">
             <div className="headerWrapper">
-              <h3> UPLOAD RESUME </h3>
+              <h3> Subir curriculum </h3>
             </div>
             <form className="form" onSubmit={submitHabdler}>
               <div className="inputWrapper">
@@ -94,8 +94,7 @@ export const UpLoadResume = ({access_token}:{access_token:string}) => {
                         target="_blank"
                       >
                         <b>
-                          <i aria-hidden className="fas fa-download"></i> Download
-                          Your Resume
+                          <i aria-hidden className="fas fa-download"></i> Descargar tu curriculum
                         </b>
                       </a>
                     </Link>

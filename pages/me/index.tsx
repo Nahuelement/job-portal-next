@@ -13,7 +13,7 @@ const Index: NextPage<Props> = ({access_token}) => {
 
     return (
 
-      <Layout title={'NahuelJob - Update profile'}  >
+      <Layout title={'Actualiza tu perfil'}  >
             <UpdateProfile access_token={access_token} />
       </Layout>
     )

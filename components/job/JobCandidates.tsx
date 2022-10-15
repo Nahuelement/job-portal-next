@@ -44,22 +44,22 @@ const JobsCandidates = ({ access_token, id }:{access_token:any, id :number}) => 
 
   const columns = [
     {
-      name: "Job Name",
+      name: "Trabajo",
       sortable: true,
       selector: (row:any) => row.title,
     },
     {
-      name: "Job Id",
+      name: "Id Trabajo",
       sortable: true,
       selector: (row:any) => row.id,
     },
     {
-      name: "Resume",
+      name: "Curriculum",
       sortable: true,
       selector: (row:any) => row.resume,
     },
     {
-      name: "Applied At",
+      name: "Dia de ingreso",
       sortable: true,
       selector: (row:any) => row.appliedAt,
     },

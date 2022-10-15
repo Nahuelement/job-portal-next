@@ -88,11 +88,11 @@ export const Home:FC<Props> = ({data}) => {
               <Link href="/stats">
                 <button className="btn btn-secondary float-right stats_btn">
 
-                  Get Topic stats
+                  Ver estadisticas
                 </button>
               </Link>
               <div className="d-block">
-                <Link href="/search">Go to Search</Link>
+                <Link href="/search">Ir al buscador</Link>
               </div>
             </div>
             {jobs && jobs.map((job)=> <JobItem  key = {job.id} job={job} /> )}

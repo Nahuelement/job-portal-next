@@ -76,31 +76,29 @@ export const TopicStats = () => {
                     <table className="table table-striped mt-4">
                       <tbody>
                         <tr>
-                          <th scope="row">Average Positions</th>
+                          <th scope="row">Promedio</th>
                           <td>{statics.avg_positions}</td>
                         </tr>
                         <tr>
-                          <th scope="row">Total Jobs</th>
+                          <th scope="row">Total trabajos</th>
                           <td> {statics.total_jobs}</td>
                         </tr>
                         <tr>
-                          <th scope="row">Minimum Salary</th>
+                          <th scope="row">Salario minimo</th>
                           <td>$ {statics.min_salary}</td>
                         </tr>
                         <tr>
-                          <th scope="row">Maximum Salary</th>
+                          <th scope="row">Salario maximo</th>
                           <td>$ {statics.max_salary}</td>
                         </tr>
                         <tr>
-                          <th scope="row">Average Salary</th>
+                          <th scope="row">Promedio salario</th>
                           <td>$ {statics.avg_salary}</td>
                         </tr>
                       </tbody>
                     </table>
                     <div className="alert alert-danger mt-4">
-                        <b>Note:</b> These stats are collected from the jobs that are
-                        posted only on Jobbee. Do not compare these stats with other
-                        sites.
+                        <b>Nota:</b> Estos salarios reperensanta esta pagina y no de otro sitio web.
                     </div>
                     </>
                 )

@@ -12,27 +12,27 @@ export const JobApplied:FC<Props> = ({jobs}) => {
 
     const columns = [
         {
-            name:'Job name',
+            name:'Trabajo',
             sortable:true,
             selector:(row:any)=> row.title
         },
         {
-            name:'Salary',
+            name:'Sueldo',
             sortable:true,
             selector:(row:any)=> row.salary
         },
         {
-            name:'Education',
+            name:'Educacion',
             sortable:true,
             selector:(row:any)=> row.education
         },
         {
-            name:'Experience',
+            name:'Experiencia',
             sortable:true,
             selector:(row:any)=> row.experience
         },
         {
-            name:'Applied On',
+            name:'Dia que aplico',
             sortable:true,
             selector:(row:any)=> row.applieOn
         },

@@ -17,14 +17,14 @@ export const Header:FC = () => {
               <div className="logoImgWrapper">
                 <Image width="50" height="50" src="/images/logo.png" alt="" />
               </div>
-              <span className="logo1">Job</span>
-              <span className="logo2">bee</span>
+              <span className="logo1">Traba</span>
+              <span className="logo2">jando</span>
             </div>
           </Link>
           <div className="btnsWrapper">
             <Link href="/job/new">
               <button className="postAJobButton">
-                <span>Post A Job</span>
+                <span>Portal de Trabajo</span>
               </button>
             </Link>
             {
@@ -46,29 +46,29 @@ export const Header:FC = () => {
                 >
                   <Link href="/employeer/jobs">
                   <button className="dropdown-item">
-                    <span>My Jobs</span>
+                    <span>Mis trabajos</span>
                   </button>
                   </Link>
                   <Link href="/me/applied">
                   <button className="dropdown-item">
-                    <span>Jobs Applied</span>
+                    <span>Trabajos aplicados</span>
                   </button>
                   </Link>
                   <Link href="/me">
                   <button className="dropdown-item">
-                    <span>Profile</span>
+                    <span>Perfil</span>
                   </button>
                   </Link>
                   <Link href="/upload/resume">
                   <button className="dropdown-item">
-                    <span>Upload Resume</span>
+                    <span>Subir curriculum</span>
                   </button>
                   </Link>
                   <Link href="/">
                   <button
                   onClick={()=>logout()}
                    className="dropdown-item text-danger">
-                    <span>Logout</span>
+                    <span>Salir</span>
                   </button>
                   </Link>
 
@@ -79,7 +79,7 @@ export const Header:FC = () => {
               !loading && (
                   <Link href="/login">
                   <button className="loginButtonHeader">
-                    <span>Login</span>
+                    <span>Ingresar</span>
                   </button>
             </Link>
               )

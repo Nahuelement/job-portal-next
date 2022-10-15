@@ -50,22 +50,22 @@ const MyJobs = ({ access_token }:{access_token:string}) => {
 
    const deleteJobHandler = (id:any) => {
      deleteJob(id, access_token);
-    
+
    };
 
   const columns = [
     {
-      name: "Job ID",
+      name: "ID trabajo",
       sortable: true,
       selector: (row:any) => row.id,
     },
     {
-      name: "Job name",
+      name: "Trabajo",
       sortable: true,
       selector: (row:any) => row.title,
     },
     {
-      name: "Salary",
+      name: "Salario",
       sortable: true,
       selector: (row:any) => row.salary,
     },
