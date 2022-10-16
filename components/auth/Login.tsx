@@ -52,7 +52,7 @@ export const Login = () => {
             <div className="right">
               <div className="rightContentWrapper">
                 <div className="headerWrapper">
-                  <h2> Ingresar</h2>
+                  <h2> Acceder</h2>
                 </div>
                 <form className="form" onSubmit={submitHandler}>
                   <div className="inputWrapper">
@@ -63,14 +63,14 @@ export const Login = () => {
                       value={email}
                       onChange={({target})=>setEmail(target.value)}
 
-                      placeholder="Enter Your Email"
+                      placeholder="Ingresa tu mail "
                       required />
                     </div>
                     <div className="inputBox">
                       <i aria-hidden className="fas fa-key"></i>
                       <input
                         type="password"
-                        placeholder="Enter Your Password"
+                        placeholder="Ingresa tu password"
                         required
                         value={password}
                         onChange={({target})=>setPassword(target.value)}
@@ -79,7 +79,7 @@ export const Login = () => {
                   </div>
                   <div className="loginButtonWrapper">
                     <button type="submit" className="loginButton">
-                      {loading ? 'Loading': 'Load'}
+                      {loading ? 'Loading': 'Ingresar'}
                     </button>
                   </div>
                   <p style={{ textDecoration: "none" }} className="signup">

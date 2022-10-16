@@ -65,7 +65,7 @@ export const Filters:FC = () => {
             <h3>Filtros</h3>
 
             <hr />
-            <h5 className="filter-heading mb-3">Job Type</h5>
+            <h5 className="filter-heading mb-3">Tipo de trabajo</h5>
 
             <div className="form-check">
               <input
@@ -108,12 +108,12 @@ export const Filters:FC = () => {
                 onClick={({target})=>handlerClick(target)}
               />
               <label className="form-check-label" htmlFor="check3">
-                Internship
+                Pasantia
               </label>
             </div>
 
             <hr />
-            <h5 className="mb-3">Education</h5>
+            <h5 className="mb-3">Educacion</h5>
 
             <div className="form-check">
               <input
@@ -141,7 +141,7 @@ export const Filters:FC = () => {
                 onClick={({target})=>handlerClick(target)}
               />
               <label className="form-check-label" htmlFor="check5">
-                Masters
+                Master
               </label>
             </div>
 
@@ -162,7 +162,7 @@ export const Filters:FC = () => {
 
             <hr />
 
-            <h5 className="mb-3">Experience</h5>
+            <h5 className="mb-3">Experiencia</h5>
 
             <div className="form-check">
               <input
@@ -225,7 +225,7 @@ export const Filters:FC = () => {
             </div>
 
             <hr />
-            <h5 className="mb-3">Salary Range</h5>
+            <h5 className="mb-3">Rango de salario</h5>
 
             <div className="form-check">
               <input

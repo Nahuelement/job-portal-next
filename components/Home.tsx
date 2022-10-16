@@ -83,8 +83,8 @@ export const Home:FC<Props> = ({data}) => {
           <div className="col-xl-9 col-lg-8 content-left-offset">
             <div className="my-5">
               <h4 className="page-title">{keyword ?
-                  `${jobs.length} Result fot ${keyword}`
-                :"Latest Jobs"}</h4>
+                  `${jobs.length} Resultado de ${keyword}`
+                :"Ultimos trabajos"}</h4>
               <Link href="/stats">
                 <button className="btn btn-secondary float-right stats_btn">
 

@@ -26,6 +26,13 @@ interface Props{
 }
 
 const JobItem:FC<Props> = ({job}) => {
+
+  const formatter = new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD',
+    minimumFractionDigits: 0
+  })
+
   return (
     <Link href={`jobs/${job.id}`}>
     <a className="job-listing">
@@ -51,7 +58,7 @@ const JobItem:FC<Props> = ({job}) => {
             <i aria-hidden className="fas fa-briefcase"></i> {job.jobType}
           </li>
           <li>
-            <i aria-hidden className="fas fa-money-check-alt"></i>${job.salary}
+            <i aria-hidden className="fas fa-money-check-alt"></i>{formatter.format(job.salary)}
           </li>
           <li>
             <i aria-hidden className="far fa-clock"></i>

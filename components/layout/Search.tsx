@@ -66,7 +66,7 @@ const Search = () => {
               </div>
               <div className="searchButtonWrapper">
                 <button type="submit" className="searchButton">
-                  Byscar
+                  Buscar
                 </button>
               </div>
             </form>

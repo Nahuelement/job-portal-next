@@ -4,6 +4,7 @@ import React, { FC, useContext, useEffect, useState } from 'react'
 import mapboxgl from 'mapbox-gl'
 import { JobsContext } from '../../context/JobsContext'
 import { toast } from 'react-toastify'
+import { AuthContext } from '../../context/AuthContext'
 
 
 
@@ -38,6 +39,20 @@ const JobDetails:FC<Props> = ({job, candidate,access_token}) => {
  const {applyToJob, applied, clearError, checkJobsApplied, error,loading} = useContext(JobsContext)
   const [stopError, setstopError] = useState(true)
 
+const {user} = useContext(AuthContext)
+
+console.log(user)
+
+const formatter = new Intl.NumberFormat('en-US', {
+  style: 'currency',
+  currency: 'USD',
+  minimumFractionDigits: 0
+})
+
+if(!user){
+
+}
+
   const getMap =async () => {
 
     const cooridinates = job.point.split("(")[1].replace(")", "").split(" ");
@@ -49,7 +64,7 @@ const JobDetails:FC<Props> = ({job, candidate,access_token}) => {
        container: "job-map",
        style: "mapbox://styles/mapbox/streets-v11",
        center: LngLat,
-       zoom: 13,
+       zoom: 15,
      });
 
     // Add market on map
@@ -78,13 +93,15 @@ useEffect(()=>{
   }
   getMap()
 
-  checkJobsApplied(job.id, access_token)
+
 
 }, [error]);
 
 
   const ApplyJobHandler = () =>{
+
     applyToJob(job.id, access_token)
+    checkJobsApplied(job.id, access_token)
 
   }
 
@@ -125,7 +142,7 @@ console.log(lastDatePassed)
                             className="btn btn-success px-4 py-2 apply-btn">
                             <i className='fas fa-check'>
                               {" "}
-                            {loading? 'Loading...':'Applied'}
+                            {loading? 'Cargando':'Aplicar'}
                             </i>
                             </button>
                           ):
@@ -134,9 +151,10 @@ console.log(lastDatePassed)
                             <button
                             className="btn btn-primary px-4 py-2 apply-btn"
                             onClick={ApplyJobHandler}
-                            disabled={lastDatePassed}
+                            disabled={lastDatePassed || !user}
                             >
-                            {loading? 'Loading...':'Apply Now'}
+                            {loading? 'Cargar...':user?'Aplicar ahora':'Necesitas ingresar'}
+
                             </button>
                           )
 
@@ -150,7 +168,7 @@ console.log(lastDatePassed)
                   </div>
 
                   <div className="job-description mt-5">
-                    <h4>Descripcion</h4>
+                    <h4>Descripción</h4>
                     <p>
                     {job.description}
                     </p>
@@ -175,7 +193,7 @@ console.log(lastDatePassed)
                         <tr>
                           <td>Salario</td>
                           <td>:</td>
-                          <td>{job.salary}</td>
+                          <td>{formatter.format(job.salary)}</td>
                         </tr>
 
                         <tr>

@@ -7,7 +7,7 @@ const NotFound = () => {
       <Image src="/images/404.svg" height="550" width="550" alt="404_not_found" />
 
       <h5>
-        Pagina no funciona. Ir  <Link href="/">Pagina principal</Link>{" "}
+        Pagina no funciona. Ir a  <Link href="/">Pagina principal</Link>{" "}
       </h5>
     </div>
   );

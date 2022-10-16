@@ -65,7 +65,7 @@ export const Register = () => {
             <div className="right">
               <div className="rightContentWrapper">
                 <div className="headerWrapper">
-                  <h2> Registrarse </h2>
+                  <h2> Crear cuenta </h2>
                 </div>
                 <form className="form" onSubmit={submitHabdler}>
                   <div className="inputWrapper">
@@ -73,7 +73,7 @@ export const Register = () => {
                       <i aria-hidden className="fas fa-user"></i>
                       <input
                        type="text"
-                       placeholder="Enter First Name"
+                       placeholder="Ingresar nombre"
                        required
                        value={fistName}
                        onChange={({target})=>setFistName(target.value)}
@@ -86,7 +86,7 @@ export const Register = () => {
                       <i aria-hidden className="fas fa-user-tie"></i>
                       <input
                       type="text"
-                      placeholder="Enter Last name"
+                      placeholder="Ingresar apellido"
                       required
                       value={lastName}
                       onChange={({target})=>setLastName(target.value)}
@@ -98,7 +98,7 @@ export const Register = () => {
                       <i aria-hidden className="fas fa-envelope"></i>
                       <input
                        type="email"
-                       placeholder="Enter Your Email"
+                       placeholder="Ingresar email"
                        required
                        value={email}
                        onChange={({target})=>setEmail(target.value)}
@@ -110,7 +110,7 @@ export const Register = () => {
                       <i aria-hidden className="fas fa-key"></i>
                       <input
                         type="password"
-                        placeholder="Enter Your Password"
+                        placeholder="Ingresar tu password"
                         required
                         value={password}
                        onChange={({target})=>setPassword(target.value)}
@@ -120,7 +120,7 @@ export const Register = () => {
                   </div>
                   <div className="registerButtonWrapper">
                     <button type="submit" className="registerButton">
-                      {loading ? "Cargando...":"Registrarse "}
+                      {loading ? "Cargando...":"Registrarme "}
                     </button>
                   </div>
                 </form>

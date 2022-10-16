@@ -18,13 +18,13 @@ export const Header:FC = () => {
                 <Image width="50" height="50" src="/images/logo.png" alt="" />
               </div>
               <span className="logo1">Traba</span>
-              <span className="logo2">jando</span>
+              <span className="logo2">jos</span>
             </div>
           </Link>
           <div className="btnsWrapper">
-            <Link href="/job/new">
+            <Link href="/employeer/jobs/new">
               <button className="postAJobButton">
-                <span>Portal de Trabajo</span>
+                <span>Anunciar</span>
               </button>
             </Link>
             {
