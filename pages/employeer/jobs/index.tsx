@@ -17,7 +17,7 @@ const Index: NextPage<Props> = ({jobs,access_token}) => {
 
     return (
 
-      <Layout title={'My jobs'}  >
+      <Layout title={'Mis Trabajos'}  >
 
        <MyJobs  access_token={access_token} />
 
@@ -56,7 +56,7 @@ import MyJobs from "../../../components/job/MyJobs"
           }
       }
 
-    
+
 
       return {
         props: {

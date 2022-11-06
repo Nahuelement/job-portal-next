@@ -74,7 +74,7 @@ export const NewJobs = ({access_token}:{access_token:string}) => {
                       <input
                       value={title}
                       onChange={({target})=>setTitle(target.value)}
-                      type="text" placeholder="Enter Job Title" required />
+                      type="text" placeholder="Ingresa titulo del trabajo" required />
                     </div>
                     <div className="inputBox">
                       <i aria-hidden className="fas fa-file-medical-alt"></i>
@@ -83,7 +83,7 @@ export const NewJobs = ({access_token}:{access_token:string}) => {
                         value={description}
                         onChange={({target})=>setDescription(target.value)}
 
-                        placeholder="Enter Job Description"
+                        placeholder="Ingresa descripcion del trabajo"
                         required
                       />
                     </div>
@@ -94,7 +94,7 @@ export const NewJobs = ({access_token}:{access_token:string}) => {
                         value={email}
                         onChange={({target})=>setemail(target.value)}
 
-                        placeholder="Enter Your Email"
+                        placeholder="Ingresa tu mail"
                         pattern="\S+@\S+\.\S+"
                         title="Your email is invalid"
                         required
@@ -105,7 +105,7 @@ export const NewJobs = ({access_token}:{access_token:string}) => {
                       <input
                       value={address}
                       onChange={({target})=>setAddress(target.value)}
-                      type="text" placeholder="Enter Address" required />
+                      type="text" placeholder="Ingresar direccion" required />
                     </div>
                     <div className="inputBox">
                       <i aria-hidden className="fas fa-dollar-sign"></i>
@@ -113,7 +113,7 @@ export const NewJobs = ({access_token}:{access_token:string}) => {
                         type="number"
                         value={salary}
                         onChange={({target})=>setSalary(target.value)}
-                        placeholder="Enter Salary Range"
+                        placeholder="Ingresa rango de salario"
                         required
                       />
                     </div>
@@ -123,7 +123,7 @@ export const NewJobs = ({access_token}:{access_token:string}) => {
                         type="number"
                         value={positions}
                         onChange={({target})=>setPosition(target.value)}
-                        placeholder="Enter No. of Positions"
+                        placeholder="Ingresa No. de la posicion"
                         required
                       />
                     </div>
@@ -133,7 +133,7 @@ export const NewJobs = ({access_token}:{access_token:string}) => {
                         value={company}
                         onChange={({target})=>setCompany(target.value)}
                         type="text"
-                        placeholder="Enter Company Name"
+                        placeholder="Ingresa el nombre de la compañia"
                         required
                       />
                     </div>
@@ -148,9 +148,11 @@ export const NewJobs = ({access_token}:{access_token:string}) => {
                       value={jobType}
                       onChange={({target})=>setJobType(target.value)}
                       >
-                          {jobTypeOptions.map((option) => (
+                          {
+
+                      jobTypeOptions.map((option) => (
                       <option key={option} value={option}>
-                        {option}
+                        {option==="Permanent"? 'Permanente':option==="Temporary"?'Temporal':"Pasantia"}
                       </option>
                     ))}
                       </select>
@@ -166,7 +168,7 @@ export const NewJobs = ({access_token}:{access_token:string}) => {
                       >
                 {educationOptions.map((option) => (
                       <option key={option} value={option}>
-                        {option}
+                        {option==="Bachelors"?'Grado':option==="Masters"?'Magister':"Phd"}
                       </option>
                     ))}
                       </select>
@@ -182,7 +184,7 @@ export const NewJobs = ({access_token}:{access_token:string}) => {
                       >
                      {industriesOptions.map((option) => (
                       <option key={option} value={option}>
-                        {option}
+                        {option==="Business"?'Negocios':option === "Information Technology"?'Informatica Tecnologia':option ==="Banking"?'Bancos': option === "Education"?'Educacion': option === "Telecommunication"?'Telecomunicaciones':'Otros'}
                       </option>
                     ))}
                       </select>
@@ -198,7 +200,8 @@ export const NewJobs = ({access_token}:{access_token:string}) => {
                       className="classic">
                         {experienceOptions.map((option) => (
                       <option key={option} value={option}>
-                        {option}
+                        {option==="No Experience"?'Sin experiencia':option==="1 Years"?'1 Año':option ==="2 Years"?'2 Años':'3 Años' }
+    
                       </option>
                     ))}
                       </select>

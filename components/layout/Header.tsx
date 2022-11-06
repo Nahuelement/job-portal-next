@@ -37,7 +37,7 @@ export const Header:FC = () => {
                 aria-haspopup= 'true'
                 aria-expanded = 'false'
                 >
-                  <span> Hi, {user.first_name}</span>{" "}
+                  <span> Hola {user.first_name}!</span>{" "}
                 </a>
 
                 <div

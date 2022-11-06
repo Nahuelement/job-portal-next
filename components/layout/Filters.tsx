@@ -93,7 +93,7 @@ export const Filters:FC = () => {
                 onClick={({target})=>handlerClick(target)}
               />
               <label className="form-check-label" htmlFor="check2">
-                Temporada
+                Temporal
               </label>
             </div>
 

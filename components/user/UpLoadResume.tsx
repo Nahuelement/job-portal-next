@@ -85,7 +85,7 @@ export const UpLoadResume = ({access_token}:{access_token:string}) => {
                 user && user.resume &&(
 
                     <>
-                    <h4 className="text-center my-3">OR</h4>
+                  
 
                     <Link href={`${user.resume}`}>
                       <a
@@ -106,7 +106,7 @@ export const UpLoadResume = ({access_token}:{access_token:string}) => {
 
               <div className="uploadButtonWrapper">
                 <button type="submit" className="uploadButton">
-                  {loading ? 'Uploading ...':'upload'}
+                  {loading ? 'Subiendo ...':'Subir'}
                 </button>
               </div>
             </form>

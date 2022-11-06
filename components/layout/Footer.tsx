@@ -10,7 +10,7 @@ export const Footer = () => {
             className="ml-4"
             rel="noreferrer"
             target="_blank"
-            href="https://storyset.com/people"
+            href="https://portafolio-git-main-nahuelement.vercel.app/"
           >
             Puedes ver mi portafolio en este Link
           </Link>

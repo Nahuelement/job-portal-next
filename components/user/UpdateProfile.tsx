@@ -89,7 +89,7 @@ return (
                   <i aria-hidden className="fas fa-user"></i>
                   <input
                    type="text"
-                   placeholder="Enter First Name"
+                   placeholder="Ingresar nombre"
                    required
                    value={fistName}
                    onChange={({target})=>setFistName(target.value)}
@@ -102,7 +102,7 @@ return (
                   <i aria-hidden className="fas fa-user-tie"></i>
                   <input
                   type="text"
-                  placeholder="Enter Last name"
+                  placeholder="Ingresar apellido"
                   required
                   value={lastName}
                   onChange={({target})=>setLastName(target.value)}
@@ -114,7 +114,7 @@ return (
                   <i aria-hidden className="fas fa-envelope"></i>
                   <input
                    type="email"
-                   placeholder="Enter Your Email"
+                   placeholder="Ingresar tu email"
                    required
                    value={email}
                    onChange={({target})=>setEmail(target.value)}
@@ -126,7 +126,7 @@ return (
                   <i aria-hidden className="fas fa-key"></i>
                   <input
                     type="password"
-                    placeholder="Enter Your Password"
+                    placeholder="Ingresar tu contraseña"
                     value={password}
                    onChange={({target})=>setPassword(target.value)}
 
@@ -135,7 +135,7 @@ return (
               </div>
               <div className="registerButtonWrapper">
                 <button type="submit" className="registerButton">
-                  {loading ? "Updateting...":"Update"}
+                  {loading ? "Actualizando...":"Actualizar"}
                 </button>
               </div>
             </form>

@@ -125,7 +125,7 @@ const MyJobs = ({ access_token }:{access_token:string}) => {
       <div className="col-9 mt-5">
 
 
-          <h4 className="my-5">My Jobs</h4>
+          <h4 className="my-5">Mis trabajos</h4>
           <DataTable columns={columns} data={data} pagination responsive />
 
       </div>
