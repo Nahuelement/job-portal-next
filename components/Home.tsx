@@ -86,7 +86,9 @@ export const Home:FC<Props> = ({data}) => {
                   `${jobs.length} Resultado de ${keyword}`
                 :"Ultimos trabajos"}</h4>
               <Link href="/stats">
-                <button className="btn btn-secondary float-right stats_btn">
+                <button className="btn btn-secondary float-right stats_btn"
+                style={{marginTop:'5vh'}}
+                >
 
                   Ver estadisticas
                 </button>
