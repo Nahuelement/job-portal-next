@@ -43,7 +43,7 @@ export const Register = () => {
         }, [loading,errors,isAuthenticated])
 
         const submitHabdler = async(e:React.FormEvent<HTMLFormElement>)=> {
-          e.preventDefault()
+      
 
           await register(fistName,lastName,email,password)
           router.push(`/${errors?'register':'login'}`)
