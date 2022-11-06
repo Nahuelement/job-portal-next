@@ -22,12 +22,6 @@ export const Register = () => {
 
 
 
-        const submitHabdler = (e:React.FormEvent<HTMLFormElement>)=> {
-            e.preventDefault()
-
-            register(fistName,lastName,email,password)
-
-        }
 
         useEffect(() => {
 
@@ -41,13 +35,20 @@ export const Register = () => {
             }
 
             if(isAuthenticated && !loading){
-                router.push('/')
+                router.push('/login')
 
             }
 
 
         }, [loading,errors,isAuthenticated])
 
+        const submitHabdler = async(e:React.FormEvent<HTMLFormElement>)=> {
+          e.preventDefault()
+
+          await register(fistName,lastName,email,password)
+          router.push(`/${errors?'register':'login'}`)
+
+      }
 
 
 
