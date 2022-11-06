@@ -76,7 +76,7 @@ export default Index
   const queryStr  = `keyword=${keyword}&location=${location}&page=${page}&jobType=${jobType}
   &education=${education}&experience=${experience}&min_salary=${min_salary}&max_salary=${max_salary}`
 
-  console.log({'QueryString':queryStr})
+  
 
 
 
