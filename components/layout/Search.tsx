@@ -47,7 +47,7 @@ const Search = () => {
                   <i aria-hidden className="fas fa-search"></i>
                   <input
                     type="text"
-                    placeholder="Enter Your Keyword"
+                    placeholder="Ingresar trabajo que buscar"
                     value = {keyword}
                     onChange={(({target})=> setKeyword(target.value))}
                     required
@@ -57,7 +57,7 @@ const Search = () => {
                   <i aria-hidden className="fas fa-industry"></i>
                   <input
                     type="text"
-                    placeholder="Enter City, State ..."
+                    placeholder="ingresa ciudad donde buscas trabajo"
                     value = {location}
                     onChange = {({target})=> setLocation(target.value)}
 

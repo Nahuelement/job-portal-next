@@ -29,8 +29,9 @@ const JobItem:FC<Props> = ({job}) => {
 
   const formatter = new Intl.NumberFormat('en-US', {
     style: 'currency',
-    currency: 'USD',
-    minimumFractionDigits: 0
+    currency: 'CLP',
+    minimumFractionDigits: 0,
+    maximumFractionDigits: 0,
   })
 
   return (
@@ -51,11 +52,15 @@ const JobItem:FC<Props> = ({job}) => {
       <div className="job-listing-footer">
         <ul>
           <li>
-            <i aria-hidden className="fas fa-industry"></i> {job.industry}
+            <i aria-hidden className="fas fa-industry"></i>
+            {job.industry==="Business"?'Negocios':job.industry === "Information Technology"?'Informatica Tecnologia':job.industry ==="Banking"?'Bancos': job.industry === "Education"?'Educacion': job.industry === "Telecommunication"?'Telecomunicaciones':'Otros'}
+
           </li>
 
           <li>
-            <i aria-hidden className="fas fa-briefcase"></i> {job.jobType}
+            <i aria-hidden className="fas fa-briefcase"></i>
+            {job.jobType==="Permanent"? 'Permanente':job.jobType==="Temporary"?'Temporal':"Pasantia"}
+
           </li>
           <li>
             <i aria-hidden className="fas fa-money-check-alt"></i>{formatter.format(job.salary)}
