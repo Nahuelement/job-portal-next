@@ -54,7 +54,7 @@ jobs && jobs.forEach((job:any) =>{
         experience:job.job.experience,
         applieOn: job.appliedAt.substring(0,10),
         action :(
-            <Link href={`/job/${job.job.id}/`}>
+            <Link href={`/jobs/${job.job.id}/`}>
                 < a href='' className='btn btn-primary'>
                     < i aria-hidden className='fa fa-eye'></i>
                 </a>
