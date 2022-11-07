@@ -98,7 +98,7 @@ export const TopicStats = () => {
                       </tbody>
                     </table>
                     <div className="alert alert-danger mt-4">
-                        <b>Nota:</b> Estos salarios reperensanta esta pagina y no de otro sitio web.
+                        <b>Nota:</b> Estos valores solo reprentan las estadisticas de esta pagina demo.
                     </div>
                     </>
                 )
