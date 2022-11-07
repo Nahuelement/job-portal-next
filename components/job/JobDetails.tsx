@@ -142,7 +142,7 @@ console.log(lastDatePassed)
                             className="btn btn-success px-4 py-2 apply-btn">
                             <i className='fas fa-check'>
                               {" "}
-                            {loading? 'Cargando':'Aplicar'}
+                            {loading? 'Cargando':'Postulando'}
                             </i>
                             </button>
                           ):
