@@ -45,7 +45,7 @@ console.log(user)
 
 const formatter = new Intl.NumberFormat('en-US', {
   style: 'currency',
-  currency: 'USD',
+  currency: 'CLP',
   minimumFractionDigits: 0
 })
 
@@ -181,13 +181,17 @@ console.log(lastDatePassed)
                         <tr>
                           <td>Trabajo</td>
                           <td>:</td>
-                          <td>{job.jobType}</td>
+                          <td>
+                          {job.jobType==="Permanent"? 'Permanente':job.jobType==="Temporary"?'Temporal':"Pasantia"}
+                          </td>
                         </tr>
 
                         <tr>
                           <td>Industria</td>
                           <td>:</td>
-                          <td>{job.industry}</td>
+                          <td>
+                          {job.industry==="Business"?'Negocios':job.industry === "Information Technology"?'Informatica Tecnologia':job.industry ==="Banking"?'Bancos': job.industry === "Education"?'Educacion': job.industry === "Telecommunication"?'Telecomunicaciones':'Otros'}
+                          </td>
                         </tr>
 
                         <tr>
@@ -199,13 +203,17 @@ console.log(lastDatePassed)
                         <tr>
                           <td>Educación</td>
                           <td>:</td>
-                          <td>{job.education}</td>
+                          <td>
+                          {job.education==="Bachelors"?'Grado':job.education==="Masters"?'Magister':"Phd"}
+                          </td>
                         </tr>
 
                         <tr>
                           <td>Experiencia </td>
                           <td>:</td>
-                          <td>{job.experience}</td>
+                          <td>
+                          {job.experience==="No Experience"?'Sin experiencia':job.experience==="1 Years"?'1 Año':job.experience ==="2 Years"?'2 Años':'3 Años' }
+                          </td>
                         </tr>
 
                         <tr>
