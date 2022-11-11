@@ -233,8 +233,8 @@ export const Filters:FC = () => {
                 type="checkbox"
                 name="salary"
                 id="check11"
-                value="1-50000"
-                defaultChecked= {checkHandler('salary',"1-50000")!}
+                value="1-500000"
+                defaultChecked= {checkHandler('salary',"1-500000")!}
                 onClick={({target})=>handlerClick(target)}
               />
               <label className="form-check-label" htmlFor="check11">
@@ -248,8 +248,8 @@ export const Filters:FC = () => {
                 type="checkbox"
                 name="salary"
                 id="check12"
-                value="50000-100000"
-                defaultChecked= {checkHandler('salary',"50000-100000")!}
+                value="500000-1000000"
+                defaultChecked= {checkHandler('salary',"500000-1000000")!}
                 onClick={({target})=>handlerClick(target)}
               />
               <label className="form-check-label" htmlFor="check12">
@@ -263,8 +263,8 @@ export const Filters:FC = () => {
                 type="checkbox"
                 name="salary"
                 id="check13"
-                value="100000-200000"
-                defaultChecked= {checkHandler('salary',"100000-200000")!}
+                value="1000000-2000000"
+                defaultChecked= {checkHandler('salary',"1000000-2000000")!}
                 onClick={({target})=>handlerClick(target)}
               />
               <label className="form-check-label" htmlFor="check13">
@@ -278,12 +278,12 @@ export const Filters:FC = () => {
                 type="checkbox"
                 name="salary"
                 id="defaultCheck2"
-                value="300000-500000"
-                defaultChecked= {checkHandler('salary',"300000-500000")!}
+                value="2000000-3000000"
+                defaultChecked= {checkHandler('salary',"2000000-3000000")!}
                 onClick={({target})=>handlerClick(target)}
               />
               <label className="form-check-label" htmlFor="defaultCheck2">
-                $3.000.000 - $4.000.000
+                $2.000.000 - $3.000.000
               </label>
             </div>
 
@@ -293,12 +293,12 @@ export const Filters:FC = () => {
                 type="checkbox"
                 name="salary"
                 id="check14"
-                value="500000-1000000"
-                defaultChecked= {checkHandler('salary',"500000-1000000")!}
+                value="3000000-5000000"
+                defaultChecked= {checkHandler('salary',"3000000-5000000")!}
                 onClick={({target})=>handlerClick(target)}
               />
               <label className="form-check-label" htmlFor="check14">
-                $4.000.000 - $5.000.000
+                $3.000.000 - $5.000.000
               </label>
             </div>
 
