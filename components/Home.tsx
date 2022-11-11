@@ -5,6 +5,8 @@ import Filters from './layout/Filters';
 import JobItem from "./job/JobItem";
 import Pagination from 'react-js-pagination'
 import { AuthContext } from "../context/AuthContext";
+import MediaQuery from 'react-responsive'
+
 
 
 interface Props {
@@ -85,14 +87,15 @@ export const Home:FC<Props> = ({data}) => {
               <h4 className="page-title">{keyword ?
                   `${jobs.length} Resultado de ${keyword}`
                 :"Ultimos trabajos"}</h4>
+              <MediaQuery minWidth={1224}>
               <Link href="/stats">
                 <button className="btn btn-secondary float-right stats_btn"
-                style={{marginTop:'5vh'}}
                 >
 
                   Ver estadisticas
                 </button>
               </Link>
+              </MediaQuery>
               <div className="d-block">
                 <Link href="/search">Ir al buscador</Link>
               </div>
