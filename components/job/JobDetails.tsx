@@ -153,7 +153,7 @@ console.log(lastDatePassed)
                             onClick={ApplyJobHandler}
                             disabled={lastDatePassed || !user}
                             >
-                            {loading? 'Cargar...':user?'Aplicar ahora':'Necesitas ingresar'}
+                            {loading? 'Cargar...':user?'Aplicar ahora':'Ingresa para postular'}
 
                             </button>
                           )

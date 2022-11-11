@@ -22,13 +22,16 @@ export const Header:FC = () => {
             </div>
           </Link>
           <div className="btnsWrapper">
+
+
+            {
+              user ?
+            <>
             <Link href="/employeer/jobs/new">
               <button className="postAJobButton">
                 <span>Anunciar</span>
               </button>
             </Link>
-            {
-              user ?
 
               <div className=' dropdown-ml-3'>
                 <a className='btn dropdown-toggle mr-4'
@@ -75,6 +78,7 @@ export const Header:FC = () => {
 
                 </div>
               </div>
+              </>
               :
               !loading && (
                   <Link href="/login">
@@ -83,6 +87,7 @@ export const Header:FC = () => {
                   </button>
             </Link>
               )
+
 
             }
 
