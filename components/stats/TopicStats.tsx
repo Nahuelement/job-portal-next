@@ -34,7 +34,7 @@ export const TopicStats = () => {
             <div className="left">
               <div className="rightContentWrapper">
                 <div className="headerWrapper">
-                  <h3> Get Topic Stats </h3>
+                  <h3> ver estadisticas de trabajos </h3>
                 </div>
                 <form className="form" onSubmit={submitHandler}>
                   <div className="inputWrapper">
@@ -42,7 +42,7 @@ export const TopicStats = () => {
                       <i aria-hidden className="fas fa-chart-line"></i>
                       <input
                       type="text"
-                      placeholder="Enter Your Topic"
+                      placeholder="Ingresa palabra clave"
                       required
                       value={topic}
                       onChange={({target})=>setTopic(target.value)}
@@ -52,7 +52,7 @@ export const TopicStats = () => {
 
                   <div className="uploadButtonWrapper">
                     <button type="submit" className="uploadButton">
-                      {loading ? "Fetching...":"Get stats"}
+                      {loading ? "Buscando...":"ver Estadisticas"}
                     </button>
                   </div>
                 </form>
