@@ -72,7 +72,7 @@ export const TopicStats = () => {
                     ):
                     statics &&
                     <>
-                    <h4>Estadisticas de {topic.toUpperCase()}:</h4>
+                    <h4>{topic.toUpperCase()}:</h4>
                     <table className="table table-striped mt-4">
                       <tbody>
                         <tr>
