@@ -34,7 +34,7 @@ export const TopicStats = () => {
             <div className="left">
               <div className="rightContentWrapper">
                 <div className="headerWrapper">
-                  <h3> Ver Estadisticas </h3>
+                  <h3> Estadisticas </h3>
                 </div>
                 <form className="form" onSubmit={submitHandler}>
                   <div className="inputWrapper">
@@ -52,7 +52,7 @@ export const TopicStats = () => {
 
                   <div className="uploadButtonWrapper">
                     <button type="submit" className="uploadButton">
-                      {loading ? "Buscando...":"Estadisticas"}
+                      {loading ? "Buscando...":"Buscar"}
                     </button>
                   </div>
                 </form>
