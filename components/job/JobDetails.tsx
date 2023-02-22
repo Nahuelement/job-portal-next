@@ -225,9 +225,9 @@ console.log(lastDatePassed)
                     </table>
                   </div>
 
-                  <div className="job-location" style={{display:'flex', justifyContent:'center',alignItems:'center'}}>
+                  <div className="job-location" style={{display:'flex',flexDirection:'column', justifyContent:'center',alignItems:'center'}}>
                     <h4 className="mt-5 mb-4">Localización</h4>
-                    <div id='job-map' style={{height:500, width:'50vw'}} />
+                    <div id='job-map' style={{height:500, width:'60vw'}} />
                   </div>
                 </div>
               </div>
