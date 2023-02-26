@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router';
-import React, { FC } from 'react'
+import React, { FC, useEffect } from 'react'
 
 export const Filters:FC = () => {
 
@@ -11,6 +11,12 @@ export const Filters:FC = () => {
   if(typeof window !== 'undefined'){
     queryParams = new URLSearchParams(window.location.search)
   }
+
+
+  useEffect(() => {
+
+  }, [queryParams])
+
 
 
   const handlerClick = (checkbox:any) =>{//toma los valores rebidos por la funcion y los compara con los valores en el documento
