@@ -5,7 +5,7 @@ export const Footer = () => {
     return (
       <footer className="py-1">
         <p className="text-center mt-1">
-          Nahuel Perugi - 2022 -
+          Nahuel Perugi - 2023 -
           <Link
             className="ml-4"
             rel="noreferrer"
